@@ -8,10 +8,10 @@ class SellStock(Order): # a concrete class inheriting from our abstract class
         return self.__stock
     @stock.setter # the nthe 'setter' method for a property
     def stock(self, new_stock):
-        if type(new_stock) == str and new_stock != '':
+        if new_stock != '':
             self.__stock = new_stock
         else:
-            self.__stock = 'Ericsson'
+            raise Exception('problem with stock')
     # we are obliged to implement the 'execute' method from the abstract class
     def execute(self):
         return self.stock.sell() # this will only work when we have actual stock with actual 'buy' methods

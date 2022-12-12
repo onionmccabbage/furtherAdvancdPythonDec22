@@ -1,4 +1,4 @@
-class Agent():
+class Agent(): # commands tend to be 'doing' words
     def __init__(self):
         self.__orderQueue = [] # start with an empty list
     def placeOrder(self, order):

@@ -1,8 +1,10 @@
-
-
-
-
-
+class StockTrade():
+    def buy(self):
+        print('buy stocks')
+    def sell(self):
+        print('sell stocks')
 
 if __name__ == '__main__':
-    pass
+    s = StockTrade()
+    s.buy()
+    s.sell()
