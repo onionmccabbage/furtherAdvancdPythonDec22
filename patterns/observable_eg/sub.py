@@ -1,5 +1,5 @@
 class Sub():
-    def __init(self, publisher):
+    def __init__(self, publisher):
         self.publisher = publisher
         self.publisher.attach(self)
     def update(self):

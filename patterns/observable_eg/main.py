@@ -8,9 +8,18 @@ from news_pub import NewsPublisher
 from print_sub import PrintSubscriber
 from email_sub import EmailSubscriber
 from media_sub import MediaSubscriber
+from other_sub import OtherSubscriber
+
+# a tuple of subscribers
+subs = (MediaSubscriber, PrintSubscriber, EmailSubscriber, OtherSubscriber)
 
 def main():
-    pass
+    news_publisher = NewsPublisher()
+    # iterate over each subscriber, notifying of fresh news
+    for Subscriber in subs:
+        Subscriber(news_publisher) # we will end up with three subscribers
+        news_publisher.add_news('News flash: its nearly done...')
+    news_publisher.notify_subscribers() # they all get 'push' notification
 
 if __name__ == '__main__':
     main()
