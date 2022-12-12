@@ -4,17 +4,20 @@ Toby Dussek December 2022
 
 9:30
 11:00
-12:30
+12:30 we are on lunch break until 1:30
 3:00
 4:30
 
+all the code is here:
+https://github.com/onionmccabbage/furtherAdvancdPythonDec22
+
 Monday
-- welcome
+> welcome
 - design patterns (and anti-patterns)
   see https://www.geeksforgeeks.org/python-design-patterns/
   and https://python-patterns.guide/
-- factory and facade patterns
-- decorator pattern (using @)
+> factory and facade patterns
+> decorator pattern (using @)
   (we will be installing additional packages as needed)
 - command pattern
 - after lunch review exercise
