@@ -13,15 +13,15 @@ Monday
 - design patterns (and anti-patterns)
   see https://www.geeksforgeeks.org/python-design-patterns/
   and https://python-patterns.guide/
-- factory, facade and observer patterns
+- factory and facade patterns
 - decorator pattern (using @)
   (we will be installing additional packages as needed)
-- review exercise
 - command pattern
-- state pattern, observables and subscribers
 - after lunch review exercise
 
 Tuesday
+- state pattern
+- observables and subscribers
 - RxPY see https://rxpy.readthedocs.io/en/latest/
 - performance and timing
 - concurrency and parallel code
@@ -36,10 +36,10 @@ Wednesday
   see https://pypi.org/project/memory-profiler/
 - after lunch review exercise
 
-Thursday
+Thursday (maybe switch Thurs/Fri)
 - Flask
   https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
-- brief overview of Django
+- async await and coroutines
 - brief overview of Anaconda (in preparation for Friday)
 - after lunch review exercise
 
@@ -48,10 +48,8 @@ Friday
   data sources (csv, xlsx, text, db, url...)
 - using Jupyter notebooks
 - numpy and data structures: the arange and array 
-  (mutable efficient indexed collection of same data-type)
 - pandas: series and data-frame
 - data vizualisation
-- time values
 - data cleansing and preparation
 - after lunch review exercise
 - end of course feedback
