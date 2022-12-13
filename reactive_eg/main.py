@@ -28,8 +28,8 @@ def main():
         # these operators will only operate when the data is ready (async)
         op.filter( lambda c:filterNames(c, letter) ),
         op.map( lambda a:a['name'] ), # just show the name
-        # op.do( lambda x:print(x)))
     )
+
     users.append({'name':'Clare'}) # we can mutate the state of our data source (which we are observing)
     users.append(True) # breaks our observable (True is not subscriptable)
     # we can subscribe to our observable repeatedly
@@ -39,7 +39,6 @@ def main():
         on_error     = lambda e: print(f'Received error {e}'),
         on_completed = lambda: print('all done') # nice to be able to tidy up ( ONLY IF NO ERRORS!!! )
     )
-    # sub.unsubscribe() # no longer respond to changes in the observable state
 
 if __name__ == '__main__':
     main()

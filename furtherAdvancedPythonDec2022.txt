@@ -4,49 +4,47 @@ Toby Dussek December 2022
 
 9:30
 11:00
-12:30 we are on lunch break until 1:30
-3:00
+12:30
+3:00 we are on afternoon break until 3:15 then carry on with review exercise
 4:30
 
-all the code is here:
+all my code examples are here:
 https://github.com/onionmccabbage/furtherAdvancdPythonDec22
 
 Monday
 > welcome
-- design patterns (and anti-patterns)
+> design patterns (and anti-patterns)
   see https://www.geeksforgeeks.org/python-design-patterns/
   and https://python-patterns.guide/
 > factory and facade patterns
 > decorator pattern (using @)
   (we will be installing additional packages as needed)
-- command pattern
-- after lunch review exercise
+> command pattern
+> proxy pattern
+> observables and subscribers
+> after lunch review exercise
+  https://gist.github.com/onionmccabbage/b40c41029ab6d5df09afb30ae555bab4
 
 Tuesday
-- state pattern
-- observables and subscribers
-- RxPY see https://rxpy.readthedocs.io/en/latest/
-- performance and timing
-- concurrency and parallel code
-- overview: thread functions and thread classes
-- thread locks/rlocks/semaphores
-- after lunch review exercise
+> show-and-tell from Monday
+> state pattern
+> RxPY see https://rxpy.readthedocs.io/en/latest/
+> concurrency and parallel code
+> overview: thread functions and thread classes
+q - can we see an example where the subscriber actually responds over TIME - and when it responds?
+> thread locks/rlocks/semaphores
+> after lunch review exercise
+  https://gist.github.com/onionmccabbage/c1e89ec5f634fc4fc1e10bc28a50e798
 
 Wednesday
 - @ decorator to make classes and methods thread safe (using Lock)
 - multiprocessing
+- performance and timing
 - profiling
   see https://pypi.org/project/memory-profiler/
 - after lunch review exercise
 
-Thursday (maybe switch Thurs/Fri)
-- Flask
-  https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
-- async await and coroutines
-- brief overview of Anaconda (in preparation for Friday)
-- after lunch review exercise
-
-Friday
+Thursday
 - Python for Data Analysis
   data sources (csv, xlsx, text, db, url...)
 - using Jupyter notebooks
@@ -54,5 +52,12 @@ Friday
 - pandas: series and data-frame
 - data vizualisation
 - data cleansing and preparation
+- after lunch review exercise
+
+Friday
+- Flask
+  https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
+- async await and coroutines
+- brief overview of Anaconda (in preparation for Friday)
 - after lunch review exercise
 - end of course feedback
