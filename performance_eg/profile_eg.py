@@ -1,3 +1,4 @@
+# may need pip install memory_profiler
 from memory_profiler import profile
 import collections
 

@@ -1,5 +1,13 @@
-from functools import reduce
+# the most common python installs are written in 'C'
+# cProfile is a tool for profiling Python modules
+# invoke cProfile like this:
+# in a command window:
+#                    -o outputfileName
+# python -m cProfile -o profiling_output cprofile_eg.py
+# this will record:
+# number of calls, total time, time per call and cumulative time
 
+from functools import reduce
 from timeit import default_timer
 
 # this one is WAY more performant
