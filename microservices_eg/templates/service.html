@@ -1,0 +1,16 @@
+<article>
+    <section>
+        <!-- flask has a micro-syntax for logic -->
+        <h2>Here is info about our services</h2>
+        {% if comms %}
+            <h4>Info about {{comms}}</h4>
+        {% else %}
+            <h4>No comms specified</h4>
+        {% endif %}
+        {% if equipment %}
+            <h4>Info about {{equipment}}</h4>
+        {% else %}
+            <h4>No equipment specified</h4>
+        {% endif %}
+    </section>
+</article>
