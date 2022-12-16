@@ -59,5 +59,9 @@ class Client():
         print('all done')
 
 if __name__ == '__main__':
+    import time
+    s= time.time()
     customer = Client()
     customer.ask_manager() # get things going...
+    e = time.time()
+    # print the time
