@@ -2,6 +2,9 @@
 # we can specify URL paths and web page responses
 from flask import Flask # may need to pip install flask
 from flask import render_template
+from weather import getWeather 
+import numpy as np
+import pandas as pd
 
 # CAREFUL changes will only take effect when the server is re-started
 
@@ -55,10 +58,29 @@ def service(comms=None, equipment=None):
     return render_template('service.html', comms = comms, equipment=equipment)
 
 # the strategy is to go from simple paths to more complex paths. Flask will handle the FIRST matching route
+@app.route('/drinks')
+def drinks():
+    return 'Available beverages: water, juice, tea, coffee'
+
+@app.route('/lunch')
+@app.route('/lunch/<desert>')
+def lunch(desert=None):
+    return render_template('lunch.html', desert=desert)
+
+@app.route('/weather/<city>')
+def weather(city='Athlone'):
+    # call our weather service
+    w = getWeather(city)
+    return w.encode()
+
+@app.route('/flights')
+def flights():
+    df = pd.read_csv('http://rcs.bu.edu/examples/python/data_analysis/flights.csv')
+    # ust show the number of unique aircraft
+    n = f'there are {df.tailnum.nunique()} unique aircraft in this data set'
+    return str(n).encode()
 
 # all other routes will end up with a default 404 response from Flask
-
-
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1') # localhost

@@ -1,0 +1,16 @@
+<article>
+    <section>
+        <h2>Lunch</h2>
+        <ul>
+            <li>Salad</li>
+            <li>Fish</li>
+            <li>Aubergine</li>
+            <li>Wraps</li>
+        </ul>
+        {% if desert !=None %}
+            <p>For desert we can offer {{desert}} </p>
+        {% else %}
+            <p>There is no desert specified</p>
+        {% endif %}
+    </section>
+</article>
