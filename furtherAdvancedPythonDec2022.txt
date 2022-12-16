@@ -5,7 +5,7 @@ Toby Dussek December 2022
 9:30
 11:00
 12:30
-3:00 we are on afternoon break until 3:15 then carry on with review exercise
+3:00
 4:30
 
 all my code examples are here:
@@ -31,33 +31,39 @@ Tuesday
 > RxPY see https://rxpy.readthedocs.io/en/latest/
 > concurrency and parallel code
 > overview: thread functions and thread classes
-q - can we see an example where the subscriber actually responds over TIME - and when it responds?
+> we have an example where the subscriber actually responds over TIME - and when it responds?
 > thread locks/rlocks/semaphores
 > after lunch review exercise
   https://gist.github.com/onionmccabbage/c1e89ec5f634fc4fc1e10bc28a50e798
 
 Wednesday
-- @ decorator to make classes and methods thread safe (using Lock)
-- multiprocessing
-- performance and timing
+> @ decorator to make classes and methods thread safe (using Lock)
+> multiprocessing
+> performance and timing
 - profiling
   see https://pypi.org/project/memory-profiler/
 - after lunch review exercise
+  https://gist.github.com/onionmccabbage/330e1897ad99fbd1c31b62ea46e65ddb
+- async await and coroutines - can we see a non-blocking example
+- prepare for Thursday ...
 
 Thursday
-- Python for Data Analysis
+> Python for Data Analysis
   data sources (csv, xlsx, text, db, url...)
-- using Jupyter notebooks
-- numpy and data structures: the arange and array 
-- pandas: series and data-frame
-- data vizualisation
-- data cleansing and preparation
-- after lunch review exercise
+> using Jupyter notebooks (via Jupyter, Anaconda, or via VS Code plugin, or online or...)
+   you can 'pip install jupyter' then start it with 'python -m notebook'
+   you will also need to pip isntall numpy, pandas etc.
+> numpy and data structures: the arange and array 
+> pandas: series and data-frame
+> data vizualisation with matplotlib
+> data cleansing and preparation
+> descriptive statistics
+> after lunch review exercise
 
 Friday
+> review of microservices
 - Flask
-  https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
-- async await and coroutines
-- brief overview of Anaconda (in preparation for Friday)
+  https://flask.palletsprojects.com/en/2.2.x/
 - after lunch review exercise
+  https://gist.github.com/onionmccabbage/a25c9a644e47660a3a85c9a0b2732b5a
 - end of course feedback
